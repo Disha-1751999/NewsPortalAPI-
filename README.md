@@ -22,7 +22,9 @@ Install the required Node.js packages:
 Create a .env file in the project root and add the following:
 
      ->PORT= 8000
+   
      ->DATABASE='mongodb+srv://deshadas:deshadas@cluster0.9sgdy.mongodb.net/NewsPortalAPI?retryWrites=true&w=majority'
+   
      ->SECRET_KEY='admin24#'
    
 🚀 Run the Project
