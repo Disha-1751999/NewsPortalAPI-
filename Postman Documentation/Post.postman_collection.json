@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "e8bfcf69-a4ea-4396-9268-a3090d4b10e6",
+		"name": "Post",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31314194"
+	},
+	"item": [
+		{
+			"name": "post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWludXNlciIsImhhc2hfcGFzc3dvcmQiOiIxMjM0NTYiLCJpYXQiOjE3MzM3MjEwNDAsImV4cCI6MTczNjMxMzA0MH0.zOm1BVWNbTz6jvDIQxG0Nym7WK0QI0USsEo1jYAt90M",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Political parties announce unity on national issues: Asif Nazrul\",\r\n    \"img\":\"https://images.prothomalo.com/prothomalo-english%2F2024-12-04%2F9wh6ohos%2Fprothomalo-bangla2024-12-04n3li57yu5.webp?auto=format%2Ccompress&fmt=webp&format=webp&dpr=1.0&q=60&w=940\",\r\n    \"article\":\"The political parties, in a meeting with chief adviser Dr Muhammad Yunus, have vowed to stand united on issues concerning the country’s independence, sovereignty, existence and dignity.Law affairs adviser Asif Nazrul made the announcement while briefing the media after the meeting at the foreign service academy in Dhaka on Wednesday.\",\r\n    \"categoryID\":\"67570abd071d6f0453bddf0b\",\r\n    \"subCategoryID\":\"67570ebb071d6f0453bddf32\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Post",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWludXNlciIsImhhc2hfcGFzc3dvcmQiOiIxMjM0NTYiLCJpYXQiOjE3MzM3MjEwNDAsImV4cCI6MTczNjMxMzA0MH0.zOm1BVWNbTz6jvDIQxG0Nym7WK0QI0USsEo1jYAt90M",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Political parties announce unity on national issues: Asif Nazrul\",\r\n    \"img\":\"https://images.prothomalo.com/prothomalo-english%2F2024-12-04%2F9wh6ohos%2Fprothomalo-bangla2024-12-04n3li57yu5.webp?auto=format%2Ccompress&fmt=webp&format=webp&dpr=1.0&q=60&w=940\",\r\n    \"article\":\"The political parties, in a meeting with chief adviser Dr Muhammad Yunus, have vowed to stand united on issues concerning the country’s independence, sovereignty, existence and dignity.Law affairs adviser Asif Nazrul made the announcement while briefing the media after the meeting at the foreign service academy in Dhaka on Wednesday.\",\r\n    \"categoryID\":\"67570abd071d6f0453bddf0b\",\r\n    \"subCategoryID\":\"67570ebb071d6f0453bddf32\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/read-post/67572d83a55d938bf720e080",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"read-post",
+						"67572d83a55d938bf720e080"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWludXNlciIsImhhc2hfcGFzc3dvcmQiOiIxMjM0NTYiLCJpYXQiOjE3MzM3MjEwNDAsImV4cCI6MTczNjMxMzA0MH0.zOm1BVWNbTz6jvDIQxG0Nym7WK0QI0USsEo1jYAt90M",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Political parties announce unity on national issues: Asif Nazrul\",\r\n    \"img\":\"https://images.prothomalo.com/prothomalo-english%2F2024-12-04%2F9wh6ohos%2Fprothomalo-bangla2024-12-04n3li57yu5.webp?auto=format%2Ccompress&fmt=webp&format=webp&dpr=1.0&q=60&w=940\",\r\n    \"article\":\"The political parties, in a meeting with chief adviser Dr Muhammad Yunus, have vowed to stand united on issues concerning the country’s independence, sovereignty, existence and dignity.Law affairs adviser Asif Nazrul made the announcement while briefing the media after the meeting at the foreign service academy in Dhaka on Wednesday.\",\r\n    \"categoryID\":\"67570abd071d6f0453bddf0b\",\r\n    \"subCategoryID\":\"67570ebb071d6f0453bddf32\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search By Keyword",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWludXNlciIsImhhc2hfcGFzc3dvcmQiOiIxMjM0NTYiLCJpYXQiOjE3MzM3MjEwNDAsImV4cCI6MTczNjMxMzA0MH0.zOm1BVWNbTz6jvDIQxG0Nym7WK0QI0USsEo1jYAt90M",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/SearchByKeyword/Political",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"SearchByKeyword",
+						"Political"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

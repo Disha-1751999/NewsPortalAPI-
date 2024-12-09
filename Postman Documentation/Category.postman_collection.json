@@ -1,0 +1,231 @@
+{
+	"info": {
+		"_postman_id": "a93658a6-feb1-4178-8e88-5572c2989f31",
+		"name": "Category",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31314194"
+	},
+	"item": [
+		{
+			"name": "create-category",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWludXNlciIsImhhc2hfcGFzc3dvcmQiOiIxMjM0NTYiLCJpYXQiOjE3MzM3MjEwNDAsImV4cCI6MTczNjMxMzA0MH0.zOm1BVWNbTz6jvDIQxG0Nym7WK0QI0USsEo1jYAt90M",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"categoryName\": \"Sports\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/create-category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"create-category"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWludXNlciIsImhhc2hfcGFzc3dvcmQiOiIxMjM0NTYiLCJpYXQiOjE3MzM3MjA2MzksImV4cCI6MTczNjMxMjYzOX0.UaOVivNDkbDynCQHa6vZZIgnxMfbFuC2A0T1KRdFiew",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categorylist",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWludXNlciIsImhhc2hfcGFzc3dvcmQiOiIxMjM0NTYiLCJpYXQiOjE3MzM3MjEwNDAsImV4cCI6MTczNjMxMzA0MH0.zOm1BVWNbTz6jvDIQxG0Nym7WK0QI0USsEo1jYAt90M",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/category-list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"category-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-category",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWludXNlciIsImhhc2hfcGFzc3dvcmQiOiIxMjM0NTYiLCJpYXQiOjE3MzM3MjEwNDAsImV4cCI6MTczNjMxMzA0MH0.zOm1BVWNbTz6jvDIQxG0Nym7WK0QI0USsEo1jYAt90M",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/delete-category/67568d7c4bf8e110845b5d67",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"delete-category",
+						"67568d7c4bf8e110845b5d67"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-sub-category",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWludXNlciIsImhhc2hfcGFzc3dvcmQiOiIxMjM0NTYiLCJpYXQiOjE3MzM3MjEwNDAsImV4cCI6MTczNjMxMzA0MH0.zOm1BVWNbTz6jvDIQxG0Nym7WK0QI0USsEo1jYAt90M",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/delete-sub-category/67569192f466b82470f7b739",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"delete-sub-category",
+						"67569192f466b82470f7b739"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subcategorylist",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWludXNlciIsImhhc2hfcGFzc3dvcmQiOiIxMjM0NTYiLCJpYXQiOjE3MzM3MjEwNDAsImV4cCI6MTczNjMxMzA0MH0.zOm1BVWNbTz6jvDIQxG0Nym7WK0QI0USsEo1jYAt90M",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/sub-category-list/67570b67071d6f0453bddf14",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sub-category-list",
+						"67570b67071d6f0453bddf14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-sub-category",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWludXNlciIsImhhc2hfcGFzc3dvcmQiOiIxMjM0NTYiLCJpYXQiOjE3MzM3MjEwNDAsImV4cCI6MTczNjMxMzA0MH0.zOm1BVWNbTz6jvDIQxG0Nym7WK0QI0USsEo1jYAt90M",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"subcategoryName\": \"Parliament\",\r\n    \"categoryID\":\"67570abd071d6f0453bddf0b\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/create-sub-category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"create-sub-category"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWludXNlciIsImhhc2hfcGFzc3dvcmQiOiIxMjM0NTYiLCJpYXQiOjE3MzM3MjA2MzksImV4cCI6MTczNjMxMjYzOX0.UaOVivNDkbDynCQHa6vZZIgnxMfbFuC2A0T1KRdFiew",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
